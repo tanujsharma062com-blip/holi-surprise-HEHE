@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff9f1">
+    <meta name="description" content="A little colour, a lot of love. Make a personal Holi wish and share it with someone special.">
+    <meta property="og:title" content="A little Holi note, just for you">
+    <meta property="og:description" content="A little colour, a lot of love. Open your Holi wish!">
+    <meta property="og:type" content="website">
+    <title>Holi, with love — A little note of colour</title>
+    <link rel="icon" href="assets/flower.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-flower" viewBox="0 0 48 48">
+        <path d="M24 3c3.4 0 5.1 5.2 5.5 9.2 3.1-2.6 7.9-4.9 10.3-2.5s.1 7.2-2.5 10.3C41.3 20.4 46 22.1 46 25s-4.7 4.6-8.7 5c2.6 3.1 4.9 7.9 2.5 10.3s-7.2.1-10.3-2.5C29.1 41.8 27.4 46 24 46s-5.1-4.2-5.5-8.2c-3.1 2.6-7.9 4.9-10.3 2.5s-.1-7.2 2.5-10.3C6.7 29.6 2 27.9 2 25s4.7-4.6 8.7-5c-2.6-3.1-4.9-7.9-2.5-10.3s7.2-.1 10.3 2.5C18.9 8.2 20.6 3 24 3Z" fill="currentColor"/>
+        <circle cx="24" cy="25" r="4.2" fill="var(--flower-center, #fff9f1)"/>
+      </symbol>
+      <symbol id="icon-sparkle" viewBox="0 0 32 32">
+        <path d="M16 1.5c1.3 8.2 5.1 12 13.5 13.5-8.4 1.5-12.2 5.3-13.5 13.5C14.7 20.3 10.9 16.5 2.5 15 10.9 13.5 14.7 9.7 16 1.5Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24">
+        <path d="M12 20.3S4 15.7 4 9.9a4.5 4.5 0 0 1 8-2.8 4.5 4.5 0 0 1 8 2.8c0 5.8-8 10.4-8 10.4Z" fill="currentColor"/>
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a class="brand" href="#top" aria-label="Holi, with love — home">
+          <span class="brand-flower" aria-hidden="true"><svg><use href="#icon-flower"></use></svg></span>
+          <span class="brand-copy"><span class="brand-name">holi, with love<span class="brand-dot">.</span></span><span class="brand-subtitle">A LITTLE NOTE OF COLOUR</span></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#the-feeling">The Holi feeling</a>
+          <a href="#make-a-wish">Make a wish</a>
+        </nav>
+        <a class="header-link" href="#make-a-wish">Send some love <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><svg aria-hidden="true"><use href="#icon-flower"></use></svg><span id="hero-kicker">A LITTLE NOTE OF COLOUR &amp; LOVE</span></p>
+          <h1 id="hero-title"><span id="hero-first-line">A little colour,</span><br><em id="hero-second-line">a lot of love.</em></h1>
+          <p class="hero-description" id="hero-description">Holi is better when it's shared. Send a little colour and a whole lot of love to someone who makes your world brighter.</p>
+          <p class="hero-signature" id="hero-signature" hidden>With love, <span id="hero-from"></span> <span aria-hidden="true">♥</span></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#make-a-wish">Make a Holi wish <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+            <button class="button button-text" id="throw-colour" type="button"><svg aria-hidden="true"><use href="#icon-sparkle"></use></svg> Throw some colour</button>
+          </div>
+          <div class="hero-footnote">
+            <div class="colour-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <span>A little joy, made to be shared.</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="A joyful burst of colourful Holi powder and marigolds">
+          <div class="art-outline" aria-hidden="true"></div>
+          <div class="hero-photo"><img src="assets/holi-colours.webp" alt="Bright pink, yellow, blue and purple Holi powder floating above marigolds" width="768" height="1376" fetchpriority="high"></div>
+          <div class="hero-sticker" aria-hidden="true"><svg><use href="#icon-flower"></use></svg><span>HOLI<br>HAI!</span></div>
+          <svg class="art-sparkle art-sparkle-one" aria-hidden="true"><use href="#icon-sparkle"></use></svg>
+          <svg class="art-sparkle art-sparkle-two" aria-hidden="true"><use href="#icon-sparkle"></use></svg>
+          <div class="round-stamp" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="stamp-circle" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"></path></defs>
+              <text><textPath href="#stamp-circle">MADE WITH LOVE · SENT WITH COLOUR · </textPath></text>
+              <use href="#icon-heart" x="44" y="44" width="32" height="32"></use>
+            </svg>
+          </div>
+          <div class="photo-note" aria-hidden="true"><span>A LITTLE BIT OF</span><strong>colour &amp; joy</strong><svg><use href="#icon-sparkle"></use></svg></div>
+        </div>
+      </section>
+
+      <div class="joy-ribbon" aria-hidden="true">
+        <div class="ribbon-inner"><span>MORE COLOUR</span><svg><use href="#icon-flower"></use></svg><span>MORE LAUGHTER</span><svg><use href="#icon-flower"></use></svg><span>MORE LOVE</span><svg><use href="#icon-flower"></use></svg><span>HAPPY HOLI</span><svg><use href="#icon-flower"></use></svg><span>MORE COLOUR</span><svg><use href="#icon-flower"></use></svg><span>MORE LAUGHTER</span></div>
+      </div>
+
+      <section class="creator" id="make-a-wish" aria-labelledby="creator-title">
+        <div class="creator-inner shell">
+          <div class="creator-copy">
+            <p class="eyebrow section-eyebrow"><span class="eyebrow-number">01</span> A LITTLE SOMETHING FOR SOMEONE</p>
+            <h2 id="creator-title">Make their day<br><em>a little brighter.</em></h2>
+            <p class="section-description">For your best friend, your favourite person, or anyone who could use a little extra joy. Make a Holi wish that's all yours.</p>
+
+            <form id="wish-form">
+              <div class="form-row">
+                <div class="field">
+                  <label for="sender">YOUR NAME</label>
+                  <input id="sender" name="sender" type="text" placeholder="Your name" maxlength="40" required autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="recipient">THEIR NAME</label>
+                  <input id="recipient" name="recipient" type="text" placeholder="Their name" maxlength="40" required>
+                </div>
+              </div>
+              <div class="field message-field">
+                <div class="label-row"><label for="message">A LITTLE MESSAGE <span>(OPTIONAL)</span></label><span class="character-count"><span id="character-count">0</span>/180</span></div>
+                <textarea id="message" name="message" rows="3" maxlength="180" placeholder="Write a little something from the heart..."></textarea>
+              </div>
+              <button class="button button-primary make-link-button" type="submit">Make my Holi link <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></button>
+              <p class="form-note"><svg aria-hidden="true"><use href="#icon-heart"></use></svg> Made with love. No sign-up needed.</p>
+
+              <div class="share-result" id="share-result" hidden aria-live="polite">
+                <div class="result-heading"><span>Your Holi link is ready!</span><svg aria-hidden="true"><use href="#icon-sparkle"></use></svg></div>
+                <p>Copy it and send a little joy their way.</p>
+                <div class="link-box">
+                  <label class="sr-only" for="generated-link">Your personalised Holi link</label>
+                  <input id="generated-link" type="text" readonly>
+                  <button id="copy-link" type="button">Copy link</button>
+                </div>
+                <a class="whatsapp-link" id="whatsapp-link" href="https://wa.me/" target="_blank" rel="noopener noreferrer">Send on WhatsApp <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </form>
+          </div>
+
+          <div class="preview-side">
+            <p class="preview-label">A LITTLE SNEAK PEEK <span aria-hidden="true">↘</span></p>
+            <div class="preview-shape" aria-hidden="true"></div>
+            <svg class="preview-flower preview-flower-one" aria-hidden="true"><use href="#icon-flower"></use></svg>
+            <svg class="preview-flower preview-flower-two" aria-hidden="true"><use href="#icon-flower"></use></svg>
+            <div class="wish-card" aria-label="Preview of your Holi wish">
+              <div class="card-topline"><span>AN EXTRA-SPECIAL HOLI NOTE</span><svg aria-hidden="true"><use href="#icon-flower"></use></svg></div>
+              <div class="card-content">
+                <p class="card-to">Dear <span id="preview-recipient">you</span>,</p>
+                <p class="card-message" id="preview-message">Wishing you a Holi full of bright colours, big laughs, and beautiful moments.</p>
+                <p class="card-signoff">With love,<br><strong id="preview-sender">someone who cares</strong> <span aria-hidden="true">♥</span></p>
+              </div>
+              <div class="card-bottom"><span>HAPPY HOLI, ALWAYS</span><span>✳ &nbsp; ✳ &nbsp; ✳</span></div>
+            </div>
+            <div class="preview-stamp" aria-hidden="true"><span>SEALED<br>WITH</span><svg><use href="#icon-heart"></use></svg><span>LOVE</span></div>
+            <p class="preview-caption">A small note. A big smile. <span>✳</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feeling shell" id="the-feeling" aria-labelledby="feeling-title">
+        <div class="feeling-heading">
+          <div><p class="eyebrow section-eyebrow"><span class="eyebrow-number">02</span> THE FEELING BEHIND THE FESTIVAL</p><h2 id="feeling-title">Here's to <em>all the good stuff.</em></h2></div>
+          <p>Holi is a celebration of colour, connection, and new beginnings. A little reminder that the best moments are the ones we share.</p>
+        </div>
+        <div class="feeling-grid">
+          <article class="feeling-card card-pink"><span class="feeling-number">01 /</span><svg aria-hidden="true"><use href="#icon-sparkle"></use></svg><h3>Fresh beginnings</h3><p>A new season, a fresh start, and so much to look forward to.</p></article>
+          <article class="feeling-card card-yellow"><span class="feeling-number">02 /</span><svg aria-hidden="true"><use href="#icon-flower"></use></svg><h3>Your favourite people</h3><p>The ones who fill your days with a little extra colour.</p></article>
+          <article class="feeling-card card-lavender"><span class="feeling-number">03 /</span><svg aria-hidden="true"><use href="#icon-heart"></use></svg><h3>All the little joys</h3><p>Big laughs, warm hugs, and memories worth keeping.</p></article>
+        </div>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title">
+        <div class="closing-inner shell">
+          <svg class="closing-flower closing-flower-left" aria-hidden="true"><use href="#icon-flower"></use></svg>
+          <p class="eyebrow">A LITTLE REMINDER FOR YOU</p>
+          <h2 id="closing-title">Life is better <em>in colour.</em></h2>
+          <p>So go on, make someone's day a little brighter.</p>
+          <a class="button button-light" href="#make-a-wish">Spread the Holi love <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+          <svg class="closing-flower closing-flower-right" aria-hidden="true"><use href="#icon-flower"></use></svg>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell"><a class="footer-brand" href="#top">holi, with love<span>.</span></a><p>A little colour for your corner of the world. <span>♥</span></p><a href="#top">BACK TO TOP ↑</a></footer>
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
